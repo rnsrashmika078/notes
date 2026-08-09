@@ -25,7 +25,7 @@
 🧹 5. Data Preprocessing
     Add Clean Missing Data
     Connect dataset → cleaning component
-    Choose method: mean / median / mode
+    Choose method: mean / median / mode ( for categorical : mode , for numerical : mean / median or mode) -> use separate cleaning components
 🎯 6. Feature Selection
     Add Select Columns in Dataset
     Connect cleaned data
