@@ -22,15 +22,20 @@
     Choose From Web URL
     Paste dataset link
     Keep default settings → Create
-🧹 5. Data Preprocessing
+
+## PIPELINE STARTS FROM HERE
+
+🧹 5. Data Preprocessing ( Component: Clean Missing Data)
     Add Clean Missing Data
-    Connect dataset → cleaning component
-    Choose method: mean / median / mode ( for categorical : mode , for numerical : mean / median or mode) -> use separate cleaning components
-🎯 6. Feature Selection
+    Connect dataset → Clean Missing Data Component
+    Choose method: mean / median / mode ( for categorical : mode , for numerical : mean / median) -> use separate Clean Missing Data components
+
+🎯 6. Feature Selection ( Component: Select Columns in Dataset)
     Add Select Columns in Dataset
     Connect cleaned data
     Select required columns (or all)
-🔀 7. Split Dataset
+
+🔀 7. Split Dataset ( Component: Split Data )
     Add Split Data
     Connect selected dataset
     Set:
@@ -38,9 +43,9 @@
         0.3 → Testing
 🤖 8. Choose Algorithm
     Add ML algorithm:
-        Binary → Two-Class Boosted Decision Tree ( Target Col : only 2 val, [YES,NO])
-        Multiclass → Multiclass Decision Forest ( more than 2)
-        Regression → Linear Regression ( numbers , continues values )
+        Binary → Two-Class Boosted Decision Tree ( if target column has only two label = [YES,NO])
+        Multiclass → Multiclass Decision Forest ( if target column have  more than 2 label)
+        Regression → Linear Regression ( if target column values are numbers , continues values )
 🏋️ 9. Train Model
     Add Train Model
     Connect:
