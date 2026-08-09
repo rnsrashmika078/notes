@@ -43,21 +43,21 @@
         0.3 → Testing
 🤖 8. Choose Algorithm
     Add ML algorithm:
-        Binary → Two-Class Boosted Decision Tree ( if target column has only two label = [YES,NO])
-        Multiclass → Multiclass Decision Forest ( if target column have  more than 2 label)
-        Regression → Linear Regression ( if target column values are numbers , continues values )
+        Binary → ( Component: Two-Class Boosted Decision Tree ) ( if target column has only two label = [YES,NO])
+        Multiclass → ( Component:  Multiclass Decision Forest ) ( if target column have  more than 2 label)
+        Regression → ( Component:  Linear Regression )  ( if target column values are numbers , continues values )
 🏋️ 9. Train Model
-    Add Train Model
+    Add Train Model ( Component: Train Model )
     Connect:
         Algorithm → Train Model
         Training data → Train Model
     Select target (label) column
-📈 10. Score Model
+📈 10. Score Model ( Component : Score Model )
     Add Score Model
     Connect:
         Trained model
         Test data
-📊 11. Evaluate Model
+📊 11. Evaluate Model ( Component : Evaluate model )
     Add Evaluate Model
     Connect from Score Model
     View metrics:
