@@ -17,3 +17,11 @@ o sudo docker run -p 3000:3000 shop-backend
 o sudo usermod -aG docker $USER -> grant permission
 o sudo docker exec -it my-container /bin/sh
 
+# copy a folder to docker container
+o docker cp ./images mycontainer:/app/
+
+# copy a file to docker container
+o docker cp filename mycontainer:/app/     
+
+# Enter to docker container
+o docker exec -it containername bash
